@@ -8,7 +8,7 @@ function doSomethingOne(){
   var one = 3;
   }
   function doSomethingOneNested() {
-    four = 5;
+    var four = 5;
   }
 console.log(one); // prints 3
 doSomethingOneNested();
