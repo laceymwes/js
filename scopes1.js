@@ -7,7 +7,12 @@ function doSomethingOne(){
   {
   var one = 3;
   }
+  function doSomethingOneNested() {
+    four = 5;
+  }
 console.log(one); // prints 3
+doSomethingOneNested();
+console.log(four); // Will not compile. var is not visible to enclosing FUNCTION
 }
 
 function doSomethingTwo(){
