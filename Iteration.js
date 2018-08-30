@@ -23,3 +23,17 @@ console.log("Property values next: \n")
  for (var o in myObj) {
    console.log(myObj[o]);
  }
+
+console.log("set property \"a\" as non-enumerable");
+Object.defineProperty(
+  myObj,
+  "a",
+  {
+    enumerable: false
+  }
+);
+
+console.log("Iterate again over myObj property keys and values: \n");
+for (var o in myObj) {
+  console.log("o : " + myObj[o]);
+}
