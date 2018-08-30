@@ -45,4 +45,3 @@ for (var o in myObj) {
 
 console.log(myObj.hasOwnProperty("a"));
 console.log(("a" in myObj));
-console.log(myObj["prototype"]);
