@@ -7,6 +7,11 @@ for (var i = 0; i < myArr.length; i++) {
   console.log(iterator.next());
 }
 
+console.log("Iteration through array using for of loop construct.");
+for (var o of myArr) {
+  console.log(o);
+}
+
 console.log("Iteration through object properties utilizig the for in loop");
 var myObj = {
   a : "value a",
@@ -37,3 +42,7 @@ console.log("Iterate again over myObj property keys and values: \n");
 for (var o in myObj) {
   console.log("o : " + myObj[o]);
 }
+
+console.log(myObj.hasOwnProperty("a"));
+console.log(("a" in myObj));
+console.log(myObj["prototype"]);
